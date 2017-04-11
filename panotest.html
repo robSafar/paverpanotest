@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <title>Test of Paver with image from Heli&oacute;polis</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./paver.css" />
+    <style type="text/css">
+        body { font-family: Helvetica, Arial, sans-serif; }
+        
+    </style>
+</head>
+<body>
+    <figure>
+        <div data-paver>
+            <img src="./image.jpg" title="New streetlights in Heli&oacute;polis." alt="New streetlights in Heli&oacute;polis." />
+        </div>
+        <figcaption>New streetlights in Heli&oacute;polis.</figcaption>
+    </figure>
+    <footer>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js"></script>
+		<script type="text/javascript" src="./jquery.paver.min.js"></script>
+		<script type="text/javascript">
+			$(function () {
+				// Paver
+				$('div[data-paver]').paver();
+			});
+		</script>
+    </footer>
+</body>
+</html>
